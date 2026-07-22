@@ -30,4 +30,3 @@ while True:
     if choice == "no":
         print("Thanks for using this calculator. Have a great day!")
         break
-    3658
