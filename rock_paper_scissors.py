@@ -34,12 +34,15 @@ while True:
         else:
             print("Computer wins this round.")
 
-    choice = input("Play another round? (yes/no): ").strip().lower()
+    while True:
+        choice = input("Play another round? (yes/no): ").strip().lower()
 
-    if choice == "no":
-        print("Thanks for playing. See you next time!")
-        break
+        if choice == "yes":
+            break
 
-    elif choice != "yes":
-        print("Invalid input! Exiting the game.")
-        break
+        elif choice == "no":
+            print("Thanks for playing. See you next time!")
+            exit()
+
+        else:
+            print("Invalid choice! Please enter 'yes' or 'no'.")
